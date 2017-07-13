@@ -59,3 +59,24 @@ API
 
 This package has no released Code API.
 
+### My usage
+# Install
+
+mkdir -p catkin_gps/src
+cd catkin_gps
+catkin_make
+cd src
+git clone git@github.com:nes123/nmea_tcp_driver.git
+cd ..
+rosdep install --from-paths src --ignore-src --rosdistro kinetic -y
+source devel/setup.bash
+catkin_make
+
+# run
+
+sudo ifconfig usb0 192.168.2.2
+source devel/setup.bash
+rosrun nmea_tcp_driver nmea_tcp_driver
+
+
+
