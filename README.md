@@ -59,8 +59,8 @@ API
 
 This package has no released Code API.
 
-### My usage
-# Install
+## My usage
+### Install
 
 mkdir -p catkin_gps/src
 cd catkin_gps
@@ -72,7 +72,7 @@ rosdep install --from-paths src --ignore-src --rosdistro kinetic -y
 source devel/setup.bash
 catkin_make
 
-# run
+### run
 
 sudo ifconfig usb0 192.168.2.2
 source devel/setup.bash
